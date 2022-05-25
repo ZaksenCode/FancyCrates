@@ -1,5 +1,7 @@
 {
-  "block.fancydecorativeblocks.electrolamp": "Электро Лампа",
-  "item.fancydecorativeblocks.electrolamp": "Электро Лампа",
+  "block.fancydecorativeblocks.electrolamp": "Электро Лампа(WIP)",
+  "item.fancydecorativeblocks.electrolamp": "Электро Лампа(WIP)",
+  "block.fancydecorativeblocks.glass_stairs": "Ступенки Из Стекла",
+  "item.fancydecorativeblocks.glass_stairs": "Ступенки Из Стекла",
   "itemGroup.fancydecorativeblocks": "Fancy Decorative Blocks"
 }

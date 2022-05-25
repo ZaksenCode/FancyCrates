@@ -4,6 +4,7 @@ import com.zaksen.fancydecorativeblocks.blocks.BaseBlock;
 import com.zaksen.fancydecorativeblocks.blocks.BaseBlockItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
