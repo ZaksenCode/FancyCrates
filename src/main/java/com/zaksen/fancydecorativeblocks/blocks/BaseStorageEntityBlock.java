@@ -30,7 +30,6 @@ import java.util.function.Supplier;
 public class BaseStorageEntityBlock extends BlockEntity implements MenuProvider {
 
     private String Name;
-    private Supplier<BaseStorageBlock> blockToUse;
     private int Size;
 
     private final ItemStackHandler ItemHandler = new ItemStackHandler(Size)
@@ -113,5 +112,4 @@ public class BaseStorageEntityBlock extends BlockEntity implements MenuProvider 
     {
 
     }
-
 }

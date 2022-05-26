@@ -17,6 +17,8 @@ public class FancyItems {
     static {
         registerBlockItemFor(FancyBlocks.ELECTRO_LAMP);
         registerEntityBlockItemFor(FancyBlocks.WOOD_CRATE);
+        registerBlockItemFor(FancyBlocks.COBBLESTONE_SMALL_TILES);
+        registerBlockItemFor(FancyBlocks.COBBLESTONE_HEXAGON);
     }
 
     private FancyItems() {

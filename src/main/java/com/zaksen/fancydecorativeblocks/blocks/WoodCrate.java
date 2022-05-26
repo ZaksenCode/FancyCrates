@@ -71,7 +71,7 @@ public class WoodCrate extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos BPos, BlockState BState) {
-        return null;
+        return new WoodCrateEntity(BPos, BState);
     }
 
     @Nullable

@@ -1,7 +1,11 @@
 {
   "block.fancydecorativeblocks.electrolamp": "Electro Lamp(WIP)",
   "item.fancydecorativeblocks.electrolamp": "Electro Lamp(WIP)",
-  "block.fancydecorativeblocks.wood_crate": "Wood Crate",
-  "item.fancydecorativeblocks.wood_crate": "Wood Crate",
+  "block.fancydecorativeblocks.wood_crate": "Wood Crate(WIP)",
+  "item.fancydecorativeblocks.wood_crate": "Wood Crate(WIP)",
+  "block.fancydecorativeblocks.cobblestone_small_tiles": "Cobblestone(Small Tiles)",
+  "item.fancydecorativeblocks.cobblestone_small_tiles": "Cobblestone(Small Tiles)",
+  "block.fancydecorativeblocks.cobblestone_hexagon": "Cobblestone(Hexagon)",
+  "item.fancydecorativeblocks.cobblestone_hexagon": "Cobblestone(Hexagon)",
   "itemGroup.fancydecorativeblocks": "Fancy Decorative Blocks"
 }

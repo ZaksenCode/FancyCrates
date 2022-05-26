@@ -16,7 +16,7 @@ import java.awt.*;
 public class FancyMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.CONTAINERS, FancyDecorativeBlocks.MOD_ID);
 
-    public static final RegistryObject<MenuType<WoodCrateMenu>> WOOD_CRATE_MENU = registerMenuType(WoodCrateMenu::new, "wood_crate_menu");
+    public static final RegistryObject<MenuType<WoodCrateMenu>> WOOD_CRATE_MENU = registerMenuType(WoodCrateMenu::new, "wood_crate");
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name)
     {

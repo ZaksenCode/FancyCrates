@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "fancydecorativeblocks:block/cobblestone_small_tiles"
+  }
+}

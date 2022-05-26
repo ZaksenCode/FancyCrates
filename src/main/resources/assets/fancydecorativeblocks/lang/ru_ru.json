@@ -1,7 +1,11 @@
 {
   "block.fancydecorativeblocks.electrolamp": "Электро Лампа(WIP)",
   "item.fancydecorativeblocks.electrolamp": "Электро Лампа(WIP)",
-  "block.fancydecorativeblocks.wood_crate": "Деревянный Ящик",
-  "item.fancydecorativeblocks.wood_crate": "Деревянный Ящик",
+  "block.fancydecorativeblocks.wood_crate": "Деревянный Ящик(WIP)",
+  "item.fancydecorativeblocks.wood_crate": "Деревянный Ящик(WIP)",
+  "block.fancydecorativeblocks.cobblestone_small_tiles": "Булыжник(мелкая плитка)",
+  "item.fancydecorativeblocks.cobblestone_small_tiles": "Булыжник(мелкая плитка)",
+  "block.fancydecorativeblocks.cobblestone_hexagon": "Булыжник(Шестиугольгик)",
+  "item.fancydecorativeblocks.cobblestone_hexagon": "Булыжник(Шестиугольгик)",
   "itemGroup.fancydecorativeblocks": "Fancy Decorative Blocks"
 }

@@ -1,6 +1,5 @@
 package com.zaksen.fancydecorativeblocks;
 
-import com.zaksen.fancydecorativeblocks.blocks.BaseStorageEntityBlock;
 import com.zaksen.fancydecorativeblocks.blocks.WoodCrateEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
