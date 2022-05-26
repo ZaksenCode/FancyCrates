@@ -19,6 +19,7 @@ public class FancyItems {
         registerEntityBlockItemFor(FancyBlocks.WOOD_CRATE);
         registerBlockItemFor(FancyBlocks.COBBLESTONE_SMALL_TILES);
         registerBlockItemFor(FancyBlocks.COBBLESTONE_HEXAGON);
+        registerBlockItemFor(FancyBlocks.POLISHED_COBBLESTONE);
     }
 
     private FancyItems() {

@@ -1,9 +1,6 @@
 package com.zaksen.fancydecorativeblocks;
 
-import com.zaksen.fancydecorativeblocks.blocks.CobblestoneHexagon;
-import com.zaksen.fancydecorativeblocks.blocks.CobblestoneSmallTiles;
-import com.zaksen.fancydecorativeblocks.blocks.ElectroLamp;
-import com.zaksen.fancydecorativeblocks.blocks.WoodCrate;
+import com.zaksen.fancydecorativeblocks.blocks.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,12 +14,14 @@ public class FancyBlocks {
     public static final RegistryObject<WoodCrate> WOOD_CRATE;
     public static final RegistryObject<CobblestoneSmallTiles> COBBLESTONE_SMALL_TILES;
     public static final RegistryObject<CobblestoneHexagon> COBBLESTONE_HEXAGON;
+    public static final RegistryObject<PolishedCobblestone> POLISHED_COBBLESTONE;
 
     static {
         ELECTRO_LAMP = BLOCKS.register("electrolamp", ElectroLamp::new);
         WOOD_CRATE = BLOCKS.register("wood_crate", WoodCrate::new);
         COBBLESTONE_SMALL_TILES = BLOCKS.register("cobblestone_small_tiles", CobblestoneSmallTiles::new);
         COBBLESTONE_HEXAGON = BLOCKS.register("cobblestone_hexagon", CobblestoneHexagon::new);
+        POLISHED_COBBLESTONE = BLOCKS.register("polished_cobblestone", PolishedCobblestone::new);
     }
 
     private FancyBlocks() {

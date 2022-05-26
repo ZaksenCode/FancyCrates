@@ -7,5 +7,7 @@
   "item.fancydecorativeblocks.cobblestone_small_tiles": "Cobblestone(Small Tiles)",
   "block.fancydecorativeblocks.cobblestone_hexagon": "Cobblestone(Hexagon)",
   "item.fancydecorativeblocks.cobblestone_hexagon": "Cobblestone(Hexagon)",
+  "block.fancydecorativeblocks.polished_cobblestone": "Polished Cobblestone",
+  "item.fancydecorativeblocks.polished_cobblestone": "Polished Cobblestone",
   "itemGroup.fancydecorativeblocks": "Fancy Decorative Blocks"
 }

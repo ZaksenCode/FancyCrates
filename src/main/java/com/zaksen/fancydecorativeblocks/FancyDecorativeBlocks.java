@@ -1,7 +1,6 @@
 package com.zaksen.fancydecorativeblocks;
 
 import com.zaksen.fancydecorativeblocks.screen.FancyMenuTypes;
-import com.zaksen.fancydecorativeblocks.screen.WoodCrateMenu;
 import com.zaksen.fancydecorativeblocks.screen.WoodCrateScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.ItemStack;
