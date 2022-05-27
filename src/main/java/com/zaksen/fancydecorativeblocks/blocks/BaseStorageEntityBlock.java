@@ -28,14 +28,7 @@ public class BaseStorageEntityBlock extends BlockEntity implements MenuProvider 
     private String Name;
     private int Size;
 
-    private final ItemStackHandler ItemHandler = new ItemStackHandler(Size)
-    {
-        @Override
-        protected void onContentsChanged(int slot)
-        {
-            setChanged();
-        }
-    };
+    private final ItemStackHandler ItemHandler;
 
     private LazyOptional<IItemHandler> LazyItemHandler = LazyOptional.empty();
 
@@ -43,6 +36,14 @@ public class BaseStorageEntityBlock extends BlockEntity implements MenuProvider 
         super(BlockEntityType, BPos, BState);
         this.Name = Name;
         this.Size = Size;
+        this.ItemHandler = new ItemStackHandler(Size)
+        {
+            @Override
+            protected void onContentsChanged(int slot)
+            {
+                setChanged();
+            }
+        };
     }
 
     @Override
