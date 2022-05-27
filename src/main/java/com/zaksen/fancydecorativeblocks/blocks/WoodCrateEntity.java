@@ -3,6 +3,7 @@ package com.zaksen.fancydecorativeblocks.blocks;
 import com.zaksen.fancydecorativeblocks.FancyBlockEntities;
 import com.zaksen.fancydecorativeblocks.screen.WoodCrateMenu;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;

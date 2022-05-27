@@ -29,11 +29,14 @@ public class FancyDecorativeBlocks
 
     public FancyDecorativeBlocks()
     {
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         FancyBlockEntities.register();
         FancyBlocks.register();
         FancyItems.register();
         FancyMenuTypes.register();
 
-        MinecraftForge.EVENT_BUS.register(new ClientSetup());
+        eventBus.addListener(ClientSetup::clientSetup);
+
+        MinecraftForge.EVENT_BUS.register(this);
     }
 }

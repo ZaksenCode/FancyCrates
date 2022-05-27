@@ -32,15 +32,15 @@ public class WoodCrateMenu extends AbstractContainerMenu {
         addPlayerHotbar(Inv);
 
         this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 7, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 25, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 43, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 61, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 4, 79, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 5, 97, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 6, 115, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 7, 133, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 8, 151, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 8, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 44, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 62, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 4, 80, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 5, 98, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 6, 116, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 7, 135, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 8, 152, 18));
         });
     }
 
