@@ -1,0 +1,23 @@
+{
+  "block.fancycrates.crate_frame": "Каркас Ящика",
+  "item.fancycrates.crate_frame": "Каркас Ящика",
+  "block.fancycrates.wood_crate": "Деревянный Ящик",
+  "item.fancycrates.wood_crate": "Деревянный Ящик",
+  "gui.fancycrates.woodcrate": "Деревянный Ящик",
+  "block.fancycrates.iron_crate": "Железный Ящик",
+  "item.fancycrates.iron_crate": "Железный Ящик",
+  "gui.fancycrates.ironcrate": "Железный Ящик",
+  "block.fancycrates.copper_crate": "Медный Ящик",
+  "item.fancycrates.copper_crate": "Медный Ящик",
+  "gui.fancycrates.coppercrate": "Медный Ящик",
+  "block.fancycrates.gold_crate": "Золотой Ящик",
+  "item.fancycrates.gold_crate": "Золотой Ящик",
+  "gui.fancycrates.goldcrate": "Золотой Ящик",
+  "block.fancycrates.diamond_crate": "Алмазный Ящик",
+  "item.fancycrates.diamond_crate": "Алмазный Ящик",
+  "gui.fancycrates.diamondcrate": "Алмазный Ящик",
+  "block.fancycrates.netherite_crate": "Незеритовый Ящик",
+  "item.fancycrates.netherite_crate": "Незеритовый Ящик",
+  "gui.fancycrates.netheritecrate": "Незеритовый Ящик",
+  "itemGroup.fancycrates": "Fancy Crates"
+}

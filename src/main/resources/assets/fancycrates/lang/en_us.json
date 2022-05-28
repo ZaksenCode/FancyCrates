@@ -1,0 +1,23 @@
+{
+  "block.fancycrates.crate_frame": "Crate Frame",
+  "item.fancycrates.crate_frame": "Crate Frame",
+  "block.fancycrates.wood_crate": "Wood Crate",
+  "item.fancycrates.wood_crate": "Wood Crate",
+  "gui.fancycrates.woodcrate": "Wood Crate",
+  "block.fancycrates.iron_crate": "Iron Crate",
+  "item.fancycrates.iron_crate": "Iron Crate",
+  "gui.fancycrates.ironcrate": "Iron Crate",
+  "block.fancycrates.copper_crate": "Copper Crate",
+  "item.fancycrates.copper_crate": "Copper Crate",
+  "gui.fancycrates.coppercrate": "Copper Crate",
+  "block.fancycrates.gold_crate": "Gold Crate",
+  "item.fancycrates.gold_crate": "Gold Crate",
+  "gui.fancycrates.goldcrate": "Gold Crate",
+  "block.fancycrates.diamond_crate": "Diamond Crate",
+  "item.fancycrates.diamond_crate": "Diamond Crate",
+  "gui.fancycrates.diamondcrate": "Diamond Crate",
+  "block.fancycrates.netherite_crate": "Netherite Crate",
+  "item.fancycrates.netherite_crate": "Netherite Crate",
+  "gui.fancycrates.netheritecrate": "Netherite Crate",
+  "itemGroup.fancycrates": "Fancy Crates"
+}
