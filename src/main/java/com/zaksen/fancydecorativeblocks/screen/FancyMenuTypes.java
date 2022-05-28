@@ -14,6 +14,9 @@ public class FancyMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.CONTAINERS, FancyDecorativeBlocks.MOD_ID);
 
     public static final RegistryObject<MenuType<WoodCrateMenu>> WOOD_CRATE_MENU = registerMenuType(WoodCrateMenu::new, "wood_crate");
+    public static final RegistryObject<MenuType<IronCrateMenu>> IRON_CRATE_MENU = registerMenuType(IronCrateMenu::new, "iron_crate");
+    public static final RegistryObject<MenuType<CopperCrateMenu>> COPPER_CRATE_MENU = registerMenuType(CopperCrateMenu::new, "copper_crate");
+    public static final RegistryObject<MenuType<GoldCrateMenu>> GOLD_CRATE_MENU = registerMenuType(GoldCrateMenu::new, "gold_crate");
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name)
     {

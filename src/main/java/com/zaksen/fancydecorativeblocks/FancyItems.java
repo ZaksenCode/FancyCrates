@@ -16,7 +16,11 @@ public class FancyItems {
 
     static {
         registerBlockItemFor(FancyBlocks.ELECTRO_LAMP);
+        registerBlockItemFor(FancyBlocks.CRATE_FRAME);
         registerEntityBlockItemFor(FancyBlocks.WOOD_CRATE);
+        registerEntityBlockItemFor(FancyBlocks.IRON_CRATE);
+        registerEntityBlockItemFor(FancyBlocks.COPPER_CRATE);
+        registerEntityBlockItemFor(FancyBlocks.GOLD_CRATE);
         registerBlockItemFor(FancyBlocks.COBBLESTONE_SMALL_TILES);
         registerBlockItemFor(FancyBlocks.COBBLESTONE_HEXAGON);
         registerBlockItemFor(FancyBlocks.POLISHED_COBBLESTONE);

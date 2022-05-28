@@ -1,7 +1,7 @@
 package com.zaksen.fancydecorativeblocks.screen;
 
 import com.zaksen.fancydecorativeblocks.FancyBlocks;
-import com.zaksen.fancydecorativeblocks.blocks.WoodCrateEntity;
+import com.zaksen.fancydecorativeblocks.blocks.CopperCrateEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -14,39 +14,57 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class WoodCrateMenu extends AbstractContainerMenu {
-    private final WoodCrateEntity blockEntity;
+public class CopperCrateMenu extends AbstractContainerMenu {
+    private final CopperCrateEntity blockEntity;
     private final Level level;
 
-    protected WoodCrateMenu(int ContrainerId, Inventory Inv, FriendlyByteBuf extraData) {
+    protected CopperCrateMenu(int ContrainerId, Inventory Inv, FriendlyByteBuf extraData) {
         this(ContrainerId, Inv, Inv.player.level.getBlockEntity(extraData.readBlockPos()));
     }
 
-    public WoodCrateMenu(int ContrainerId, Inventory Inv, BlockEntity entity) {
-        super(FancyMenuTypes.WOOD_CRATE_MENU.get(), ContrainerId);
-        checkContainerSize(Inv,9);
-        blockEntity = ((WoodCrateEntity) entity);
+    public CopperCrateMenu(int ContrainerId, Inventory Inv, BlockEntity entity) {
+        super(FancyMenuTypes.COPPER_CRATE_MENU.get(), ContrainerId);
+        checkContainerSize(Inv,27);
+        blockEntity = ((CopperCrateEntity) entity);
         this.level = Inv.player.level;
 
         addPlayerInventory(Inv);
         addPlayerHotbar(Inv);
 
         this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 8, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 44, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 62, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 4, 80, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 5, 98, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 6, 116, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 7, 134, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 8, 152, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 8, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 44, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 62, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 4, 80, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 5, 98, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 6, 116, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 7, 134, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 8, 152, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 9, 8, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 10, 26, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 11, 44, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 12, 62, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 13, 80, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 14, 98, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 15, 116, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 16, 134, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 17, 152, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 18, 8, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 19, 26, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 20, 44, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 21, 62, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 22, 80, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 23, 98, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 24, 116, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 25, 134, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 26, 152, 54));
         });
     }
 
     @Override
     public boolean stillValid(Player P) {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), P, FancyBlocks.WOOD_CRATE.get());
+        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), P, FancyBlocks.COPPER_CRATE.get());
     }
 
     private void addPlayerInventory(Inventory playerInv)
@@ -55,7 +73,7 @@ public class WoodCrateMenu extends AbstractContainerMenu {
         {
             for(int l = 0; l < 9; ++l)
             {
-                this.addSlot(new Slot(playerInv, l + i * 9 + 9, 8 + l * 18, 66 + i * 18));
+                this.addSlot(new Slot(playerInv, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
             }
         }
     }
@@ -64,7 +82,7 @@ public class WoodCrateMenu extends AbstractContainerMenu {
     {
         for(int i = 0; i < 9; ++i)
         {
-            this.addSlot(new Slot(playerInventory, i, (8 + i * 18), 124));
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
 
@@ -75,7 +93,7 @@ public class WoodCrateMenu extends AbstractContainerMenu {
     private static final int VANILLA_SLOT_COUNT = HOTBAR_SLOT_COUNT + PLAYER_INVENTORY_SLOT_COUNT;
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
-    private static final int TE_INVENTORY_SLOT_COUNT = 9;
+    private static final int TE_INVENTORY_SLOT_COUNT = 27;
 
     @Override
     public ItemStack quickMoveStack(Player p, int index)

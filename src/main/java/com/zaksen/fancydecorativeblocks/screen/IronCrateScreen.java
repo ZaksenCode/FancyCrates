@@ -9,10 +9,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class WoodCrateScreen extends AbstractContainerScreen<WoodCrateMenu> {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(FancyDecorativeBlocks.MOD_ID, "textures/gui/wood_crate_gui.png");
+public class IronCrateScreen extends AbstractContainerScreen<IronCrateMenu> {
+    private static final ResourceLocation TEXTURE = new ResourceLocation(FancyDecorativeBlocks.MOD_ID, "textures/gui/iron_crate_gui.png");
 
-    public WoodCrateScreen(WoodCrateMenu Menu, Inventory Inv, Component Title) {
+    public IronCrateScreen(IronCrateMenu Menu, Inventory Inv, Component Title) {
         super(Menu, Inv, Title);
     }
 
@@ -22,11 +22,11 @@ public class WoodCrateScreen extends AbstractContainerScreen<WoodCrateMenu> {
         RenderSystem.setShaderColor(1.0f, 1.0f, 1.0f, 1.0f);
         RenderSystem.setShaderTexture(0, TEXTURE);
         imageWidth = 176;
-        imageHeight = 130;
+        imageHeight = 148;
         titleLabelX = 8;
-        titleLabelY = 24;
+        titleLabelY = 16;
         inventoryLabelX = 8;
-        inventoryLabelY = 54;
+        inventoryLabelY = 63;
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
 

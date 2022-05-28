@@ -1,7 +1,6 @@
 package com.zaksen.fancydecorativeblocks;
 
-import com.zaksen.fancydecorativeblocks.screen.FancyMenuTypes;
-import com.zaksen.fancydecorativeblocks.screen.WoodCrateScreen;
+import com.zaksen.fancydecorativeblocks.screen.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -15,6 +14,9 @@ public class ClientSetup {
             @Override
             public void run() {
                 MenuScreens.register(FancyMenuTypes.WOOD_CRATE_MENU.get(), WoodCrateScreen::new);
+                MenuScreens.register(FancyMenuTypes.IRON_CRATE_MENU.get(), IronCrateScreen::new);
+                MenuScreens.register(FancyMenuTypes.COPPER_CRATE_MENU.get(), CopperCrateScreen::new);
+                MenuScreens.register(FancyMenuTypes.GOLD_CRATE_MENU.get(), GoldCrateScreen::new);
             }
         };
         Event.enqueueWork(runnable);

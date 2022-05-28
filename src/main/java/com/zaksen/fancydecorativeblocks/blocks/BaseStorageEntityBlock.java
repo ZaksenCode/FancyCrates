@@ -5,6 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -22,6 +23,8 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Locale;
 
 public class BaseStorageEntityBlock extends BlockEntity implements MenuProvider {
 
@@ -48,7 +51,7 @@ public class BaseStorageEntityBlock extends BlockEntity implements MenuProvider 
 
     @Override
     public Component getDisplayName() {
-        return new TextComponent(Name);
+        return new TranslatableComponent("gui.fancydecorativeblocks." + Name.toLowerCase(Locale.ROOT).replaceAll(" ", ""));
     }
 
     @Nullable
@@ -75,12 +78,14 @@ public class BaseStorageEntityBlock extends BlockEntity implements MenuProvider 
 
     @Override
     protected void saveAdditional(CompoundTag Tag) {
+        Tag.put("inventory", ItemHandler.serializeNBT());
         super.saveAdditional(Tag);
     }
 
     @Override
     public void load(CompoundTag Tag) {
         super.load(Tag);
+        ItemHandler.deserializeNBT(Tag.getCompound("inventory"));
     }
 
     @Override
@@ -94,8 +99,9 @@ public class BaseStorageEntityBlock extends BlockEntity implements MenuProvider 
         SimpleContainer Inventory = new SimpleContainer(ItemHandler.getSlots());
         for(int i = 0; i < ItemHandler.getSlots(); i ++)
         {
-            Inventory.setItem(i, ItemHandler.getStackInSlot(1));
+            Inventory.setItem(i, ItemHandler.getStackInSlot(i));
         }
+
 
         Containers.dropContents(this.level, this.worldPosition, Inventory);
     }
