@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx",
+    "xx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:cobblestone",
+      "data": 1
+    }
+  },
+  "result":
+  {
+    "item": "fancydecorativeblocks:polished_cobblestone",
+    "count": 4,
+    "data": 1
+  }
+}
