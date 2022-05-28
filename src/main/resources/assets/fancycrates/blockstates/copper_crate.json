@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "fancydecorativeblocks:block/copper_crate"
+      "model": "fancycrates:block/copper_crate"
     }
   }
 }

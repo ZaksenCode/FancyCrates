@@ -10,11 +10,11 @@
             "tag": "minecraft:planks"
         },
         "O": {
-            "item": "fancydecorativeblocks:crate_frame"
+            "item": "fancycrates:crate_frame"
         }
     },
     "result": {
-        "item": "fancydecorativeblocks:wood_crate",
+        "item": "fancycrates:wood_crate",
         "count": 1
     }
 }

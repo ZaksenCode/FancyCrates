@@ -10,11 +10,11 @@
             "tag": "forge:gems/diamond"
         },
         "O": {
-            "item": "fancydecorativeblocks:crate_frame"
+            "item": "fancycrates:crate_frame"
         }
     },
     "result": {
-        "item": "fancydecorativeblocks:diamond_crate",
+        "item": "fancycrates:diamond_crate",
         "count": 1
     }
 }

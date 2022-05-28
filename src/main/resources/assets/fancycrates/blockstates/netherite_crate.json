@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "fancydecorativeblocks:block/netherite_crate"
+      "model": "fancycrates:block/netherite_crate"
     }
   }
 }

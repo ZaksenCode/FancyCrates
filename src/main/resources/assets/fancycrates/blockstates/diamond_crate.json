@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "fancydecorativeblocks:block/diamond_crate"
+      "model": "fancycrates:block/diamond_crate"
     }
   }
 }

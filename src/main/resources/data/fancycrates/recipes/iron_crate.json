@@ -10,11 +10,11 @@
             "tag": "forge:ingots/iron"
         },
         "O": {
-            "item": "fancydecorativeblocks:crate_frame"
+            "item": "fancycrates:crate_frame"
         }
     },
     "result": {
-        "item": "fancydecorativeblocks:iron_crate",
+        "item": "fancycrates:iron_crate",
         "count": 1
     }
 }

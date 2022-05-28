@@ -10,11 +10,11 @@
             "tag": "forge:ingots/gold"
         },
         "O": {
-            "item": "fancydecorativeblocks:crate_frame"
+            "item": "fancycrates:crate_frame"
         }
     },
     "result": {
-        "item": "fancydecorativeblocks:gold_crate",
+        "item": "fancycrates:gold_crate",
         "count": 1
     }
 }

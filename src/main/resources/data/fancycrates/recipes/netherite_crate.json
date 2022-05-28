@@ -1,12 +1,12 @@
 {
     "type": "minecraft:smithing",
     "base": {
-        "item": "fancydecorativeblocks:diamond_crate"
+        "item": "fancycrates:diamond_crate"
     },
     "addition": {
         "tag": "forge:ingots/netherite"
     },
     "result": {
-        "item": "fancydecorativeblocks:netherite_crate"
+        "item": "fancycrates:netherite_crate"
     }
 }

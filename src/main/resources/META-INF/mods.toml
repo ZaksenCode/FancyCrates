@@ -34,7 +34,7 @@ credits="Thanks for this example mod goes to Java" #optional
 authors="Zaksen" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-The great mod what add some fancy decorative blocks :)
+The great mod what add some crate's
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.fancycrates]] #optional
