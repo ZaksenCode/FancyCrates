@@ -24,7 +24,7 @@ public class WoodCrateMenu extends AbstractContainerMenu {
 
     public WoodCrateMenu(int ContrainerId, Inventory Inv, BlockEntity entity) {
         super(FancyMenuTypes.WOOD_CRATE_MENU.get(), ContrainerId);
-        checkContainerSize(Inv,9);
+        checkContainerSize(Inv,41);
         blockEntity = ((WoodCrateEntity) entity);
         this.level = Inv.player.level;
 

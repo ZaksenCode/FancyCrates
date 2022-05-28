@@ -17,6 +17,8 @@ public class FancyMenuTypes {
     public static final RegistryObject<MenuType<IronCrateMenu>> IRON_CRATE_MENU = registerMenuType(IronCrateMenu::new, "iron_crate");
     public static final RegistryObject<MenuType<CopperCrateMenu>> COPPER_CRATE_MENU = registerMenuType(CopperCrateMenu::new, "copper_crate");
     public static final RegistryObject<MenuType<GoldCrateMenu>> GOLD_CRATE_MENU = registerMenuType(GoldCrateMenu::new, "gold_crate");
+    public static final RegistryObject<MenuType<DiamondCrateMenu>> DIAMOND_CRATE_MENU = registerMenuType(DiamondCrateMenu::new, "diamond_crate");
+    public static final RegistryObject<MenuType<NetheriteCrateMenu>> NETHERITE_CRATE_MENU = registerMenuType(NetheriteCrateMenu::new, "netherite_crate");
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name)
     {

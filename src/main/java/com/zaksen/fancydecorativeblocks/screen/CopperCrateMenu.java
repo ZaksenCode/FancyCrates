@@ -24,7 +24,7 @@ public class CopperCrateMenu extends AbstractContainerMenu {
 
     public CopperCrateMenu(int ContrainerId, Inventory Inv, BlockEntity entity) {
         super(FancyMenuTypes.COPPER_CRATE_MENU.get(), ContrainerId);
-        checkContainerSize(Inv,27);
+        checkContainerSize(Inv,41);
         blockEntity = ((CopperCrateEntity) entity);
         this.level = Inv.player.level;
 

@@ -24,7 +24,7 @@ public class IronCrateMenu extends AbstractContainerMenu {
 
     public IronCrateMenu(int ContrainerId, Inventory Inv, BlockEntity entity) {
         super(FancyMenuTypes.IRON_CRATE_MENU.get(), ContrainerId);
-        checkContainerSize(Inv,18);
+        checkContainerSize(Inv,41);
         blockEntity = ((IronCrateEntity) entity);
         this.level = Inv.player.level;
 

@@ -9,10 +9,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class GoldCrateScreen extends AbstractContainerScreen<GoldCrateMenu> {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(FancyDecorativeBlocks.MOD_ID, "textures/gui/gold_crate_gui.png");
+public class NetheriteCrateScreen extends AbstractContainerScreen<NetheriteCrateMenu> {
+    private static final ResourceLocation TEXTURE = new ResourceLocation(FancyDecorativeBlocks.MOD_ID, "textures/gui/netherite_crate_gui.png");
 
-    public GoldCrateScreen(GoldCrateMenu Menu, Inventory Inv, Component Title) {
+    public NetheriteCrateScreen(NetheriteCrateMenu Menu, Inventory Inv, Component Title) {
         super(Menu, Inv, Title);
     }
 
@@ -21,12 +21,12 @@ public class GoldCrateScreen extends AbstractContainerScreen<GoldCrateMenu> {
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0f, 1.0f, 1.0f, 1.0f);
         RenderSystem.setShaderTexture(0, TEXTURE);
-        imageWidth = 176;
-        imageHeight = 202;
-        titleLabelX = 8;
-        titleLabelY = -12;
+        imageWidth = 248;
+        imageHeight = 238;
+        titleLabelX = -28;
+        titleLabelY = -30;
         inventoryLabelX = 8;
-        inventoryLabelY = 90;
+        inventoryLabelY = 108;
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
 

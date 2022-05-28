@@ -16,6 +16,8 @@ public class FancyBlocks {
     public static final RegistryObject<IronCrate> IRON_CRATE;
     public static final RegistryObject<CopperCrate> COPPER_CRATE;
     public static final RegistryObject<GoldCrate> GOLD_CRATE;
+    public static final RegistryObject<DiamondCrate> DIAMOND_CRATE;
+    public static final RegistryObject<NetheriteCrate> NETHERITE_CRATE;
     public static final RegistryObject<CobblestoneSmallTiles> COBBLESTONE_SMALL_TILES;
     public static final RegistryObject<CobblestoneHexagon> COBBLESTONE_HEXAGON;
     public static final RegistryObject<PolishedCobblestone> POLISHED_COBBLESTONE;
@@ -27,6 +29,8 @@ public class FancyBlocks {
         IRON_CRATE = BLOCKS.register("iron_crate", IronCrate::new);
         COPPER_CRATE = BLOCKS.register("copper_crate", CopperCrate::new);
         GOLD_CRATE = BLOCKS.register("gold_crate", GoldCrate::new);
+        DIAMOND_CRATE = BLOCKS.register("diamond_crate", DiamondCrate::new);
+        NETHERITE_CRATE = BLOCKS.register("netherite_crate", NetheriteCrate::new);
         COBBLESTONE_SMALL_TILES = BLOCKS.register("cobblestone_small_tiles", CobblestoneSmallTiles::new);
         COBBLESTONE_HEXAGON = BLOCKS.register("cobblestone_hexagon", CobblestoneHexagon::new);
         POLISHED_COBBLESTONE = BLOCKS.register("polished_cobblestone", PolishedCobblestone::new);

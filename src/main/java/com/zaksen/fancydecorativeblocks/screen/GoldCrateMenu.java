@@ -24,7 +24,7 @@ public class GoldCrateMenu extends AbstractContainerMenu {
 
     public GoldCrateMenu(int ContrainerId, Inventory Inv, BlockEntity entity) {
         super(FancyMenuTypes.GOLD_CRATE_MENU.get(), ContrainerId);
-        checkContainerSize(Inv,45);
+        checkContainerSize(Inv,41);
         blockEntity = ((GoldCrateEntity) entity);
         this.level = Inv.player.level;
 
@@ -32,51 +32,51 @@ public class GoldCrateMenu extends AbstractContainerMenu {
         addPlayerHotbar(Inv);
 
         this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 8, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 44, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 62, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 4, 80, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 5, 98, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 6, 116, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 7, 134, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 8, 152, 18));
-            this.addSlot(new SlotItemHandler(iItemHandler, 9, 8, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 10, 26, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 11, 44, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 12, 62, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 13, 80, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 14, 98, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 15, 116, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 16, 134, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 17, 152, 36));
-            this.addSlot(new SlotItemHandler(iItemHandler, 18, 8, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 19, 26, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 20, 44, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 21, 62, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 22, 80, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 23, 98, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 24, 116, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 25, 134, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 26, 152, 54));
-            this.addSlot(new SlotItemHandler(iItemHandler, 27, 8, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 28, 26, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 29, 44, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 30, 62, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 31, 80, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 32, 98, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 33, 116, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 34, 134, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 35, 152, 72));
-            this.addSlot(new SlotItemHandler(iItemHandler, 36, 8, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 37, 26, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 38, 44, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 39, 62, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 40, 80, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 41, 98, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 42, 116, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 43, 134, 90));
-            this.addSlot(new SlotItemHandler(iItemHandler, 44, 152, 90));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 8, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 44, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 62, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 4, 80, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 5, 98, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 6, 116, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 7, 134, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 8, 152, 0));
+            this.addSlot(new SlotItemHandler(iItemHandler, 9, 8, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 10, 26, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 11, 44, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 12, 62, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 13, 80, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 14, 98, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 15, 116, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 16, 134, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 17, 152, 18));
+            this.addSlot(new SlotItemHandler(iItemHandler, 18, 8, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 19, 26, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 20, 44, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 21, 62, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 22, 80, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 23, 98, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 24, 116, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 25, 134, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 26, 152, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 27, 8, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 28, 26, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 29, 44, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 30, 62, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 31, 80, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 32, 98, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 33, 116, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 34, 134, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 35, 152, 54));
+            this.addSlot(new SlotItemHandler(iItemHandler, 36, 8, 72));
+            this.addSlot(new SlotItemHandler(iItemHandler, 37, 26, 72));
+            this.addSlot(new SlotItemHandler(iItemHandler, 38, 44, 72));
+            this.addSlot(new SlotItemHandler(iItemHandler, 39, 62, 72));
+            this.addSlot(new SlotItemHandler(iItemHandler, 40, 80, 72));
+            this.addSlot(new SlotItemHandler(iItemHandler, 41, 98, 72));
+            this.addSlot(new SlotItemHandler(iItemHandler, 42, 116, 72));
+            this.addSlot(new SlotItemHandler(iItemHandler, 43, 134, 72));
+            this.addSlot(new SlotItemHandler(iItemHandler, 44, 152, 72));
         });
     }
 
@@ -91,7 +91,7 @@ public class GoldCrateMenu extends AbstractContainerMenu {
         {
             for(int l = 0; l < 9; ++l)
             {
-                this.addSlot(new Slot(playerInv, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
+                this.addSlot(new Slot(playerInv, l + i * 9 + 9, 8 + l * 18, 102 + i * 18));
             }
         }
     }
@@ -100,7 +100,7 @@ public class GoldCrateMenu extends AbstractContainerMenu {
     {
         for(int i = 0; i < 9; ++i)
         {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 160));
         }
     }
 

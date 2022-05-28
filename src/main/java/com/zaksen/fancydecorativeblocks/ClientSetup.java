@@ -17,6 +17,8 @@ public class ClientSetup {
                 MenuScreens.register(FancyMenuTypes.IRON_CRATE_MENU.get(), IronCrateScreen::new);
                 MenuScreens.register(FancyMenuTypes.COPPER_CRATE_MENU.get(), CopperCrateScreen::new);
                 MenuScreens.register(FancyMenuTypes.GOLD_CRATE_MENU.get(), GoldCrateScreen::new);
+                MenuScreens.register(FancyMenuTypes.DIAMOND_CRATE_MENU.get(), DiamondCrateScreen::new);
+                MenuScreens.register(FancyMenuTypes.NETHERITE_CRATE_MENU.get(), NetheriteCrateScreen::new);
             }
         };
         Event.enqueueWork(runnable);
