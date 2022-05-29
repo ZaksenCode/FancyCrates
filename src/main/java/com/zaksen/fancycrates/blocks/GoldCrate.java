@@ -25,7 +25,7 @@ import java.util.Random;
 public class GoldCrate extends BaseEntityBlock {
 
     public GoldCrate() {
-        super(Properties.of(Material.METAL).sound(SoundType.METAL).destroyTime(1f).explosionResistance(2f));
+        super(Properties.of(Material.METAL).sound(SoundType.METAL).destroyTime(1f).explosionResistance(2f).requiresCorrectToolForDrops());
     }
 
     @Override

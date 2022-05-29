@@ -25,7 +25,7 @@ import java.util.Random;
 public class WoodCrate extends BaseEntityBlock {
 
     public WoodCrate() {
-        super(Properties.of(Material.WOOD).sound(SoundType.WOOD).destroyTime(0.5f).explosionResistance(0.5f));
+        super(Properties.of(Material.WOOD).sound(SoundType.WOOD).destroyTime(0.5f).explosionResistance(0.5f).requiresCorrectToolForDrops());
     }
 
     @Override

@@ -25,7 +25,7 @@ import java.util.Random;
 public class DiamondCrate extends BaseEntityBlock {
 
     public DiamondCrate() {
-        super(Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).destroyTime(5f).explosionResistance(5f));
+        super(Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).destroyTime(5f).explosionResistance(5f).requiresCorrectToolForDrops());
     }
 
     @Override

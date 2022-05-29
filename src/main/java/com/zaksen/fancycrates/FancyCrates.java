@@ -2,7 +2,6 @@ package com.zaksen.fancycrates;
 
 import com.zaksen.fancycrates.screen.FancyMenuTypes;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
