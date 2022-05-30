@@ -13,6 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class FancyItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FancyCrates.MOD_ID);
 
+    public static final RegistryObject<WoodCrateUpgrade> WOOD_CRATE_UPGRADE;
     static {
         registerBlockItemFor(FancyBlocks.CRATE_FRAME);
         registerEntityBlockItemFor(FancyBlocks.WOOD_CRATE);
@@ -21,6 +22,7 @@ public class FancyItems {
         registerEntityBlockItemFor(FancyBlocks.GOLD_CRATE);
         registerEntityBlockItemFor(FancyBlocks.DIAMOND_CRATE);
         registerEntityBlockItemFor(FancyBlocks.NETHERITE_CRATE);
+        WOOD_CRATE_UPGRADE = ITEMS.register("wood_crate_upgrade", WoodCrateUpgrade::new);
     }
 
     private FancyItems() {

@@ -25,7 +25,7 @@ import java.util.Random;
 public class NetheriteCrate extends BaseEntityBlock {
 
     public NetheriteCrate() {
-        super(Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).destroyTime(10f).explosionResistance(20f).requiresCorrectToolForDrops());
+        super(Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).destroyTime(8f).explosionResistance(20f));
     }
 
     @Override

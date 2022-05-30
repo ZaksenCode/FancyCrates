@@ -1,12 +1,15 @@
 package com.zaksen.fancycrates.blocks;
 
 import com.zaksen.fancycrates.FancyBlockEntities;
+import com.zaksen.fancycrates.FancyBlocks;
+import com.zaksen.fancycrates.FancyItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.RenderShape;
@@ -25,7 +28,7 @@ import java.util.Random;
 public class WoodCrate extends BaseEntityBlock {
 
     public WoodCrate() {
-        super(Properties.of(Material.WOOD).sound(SoundType.WOOD).destroyTime(0.5f).explosionResistance(0.5f).requiresCorrectToolForDrops());
+        super(Properties.of(Material.WOOD).sound(SoundType.WOOD).destroyTime(0.5f).explosionResistance(0.5f));
     }
 
     @Override
@@ -33,7 +36,7 @@ public class WoodCrate extends BaseEntityBlock {
         if(!Level.isClientSide)
         {
             BlockEntity entity = Level.getBlockEntity(BPos);
-            if(entity instanceof  WoodCrateEntity)
+            if(entity instanceof WoodCrateEntity)
             {
                 NetworkHooks.openGui(((ServerPlayer)P), (WoodCrateEntity)entity, BPos);
             }
